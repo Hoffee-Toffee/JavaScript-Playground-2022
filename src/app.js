@@ -1,4 +1,5 @@
-console.log("Hello World!")
+console.log("Hello")
+console.log("Tristan Bulmer")
 // TODO:
 
 // NOTE:
