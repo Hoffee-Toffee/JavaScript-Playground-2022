@@ -1,7 +1,8 @@
 function test(arr){
-    return arr[0, 1 ,2 ];
+    return arr[0];
 }
-console.log(test);
+
+console.log(test([1]))
 
 console.log(test([1, 23, 5]))
 //refactored to 
@@ -11,3 +12,16 @@ console.log(test([1, 23, 5]))
 
 // coding rust - println!("insane in the membrane") 
 
+function createArray(a, b) {
+    var arr = [a,b]
+
+    return arr
+}
+
+console.log(createArray(1, 2))
+
+function reverseArray(arr) {
+    return arr.reverse()
+}
+
+console.log(reverseArray([10, "Burger", 69, "Nice"]))
