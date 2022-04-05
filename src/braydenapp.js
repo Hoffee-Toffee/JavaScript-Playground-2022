@@ -31,3 +31,13 @@ function lastArrayElement(arr = []) {
 }
 
 console.log(lastArrayElement([10, "Burger", 69, "Nice"]))
+
+
+
+
+
+function arrToStr(arr = []) {
+    return arr.toString()
+}
+
+console.log(arrToStr([10, "Burger", 69, "Nice"]))
