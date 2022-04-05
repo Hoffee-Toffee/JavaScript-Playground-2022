@@ -11,3 +11,7 @@ console.log(test([1, 23, 5]))
 
 // coding rust - println!("insane in the membrane") 
 
+function CreateArray(a,b){
+    var arr =[a,b]
+    return arr
+}
