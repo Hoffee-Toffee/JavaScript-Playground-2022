@@ -49,8 +49,11 @@ function arrValTypes(arr = []) {
     for (let index = 0; index < arr.length; index++) {
         typeArr.push(typeof(arr[index]))
     }
-
     return typeArr.join(", ")
 }
 
 console.log(arrValTypes([10, "Burger", 69, "Nice", true, 10.6]))
+
+const getArrElementTypes = arr => arr.map(x => typeof x)
+
+console.log(getArrElementTypes([10, "Burger", 69, "Nice", true, 10.6]))
