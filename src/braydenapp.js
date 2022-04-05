@@ -3,6 +3,11 @@ function test(arr){
 }
 console.log(test);
 
-test([1, 23, 5])
+console.log(test([1, 23, 5]))
 //refactored to 
-const getArrElement = arr => arr[0]
+//const getArrElement = arr => arr[0] ;
+
+//console.log("damn daniel", "back at it again with the white vans");
+
+// coding rust - println!("insane in the membrane") 
+
