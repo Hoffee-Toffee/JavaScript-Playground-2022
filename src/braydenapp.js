@@ -37,7 +37,8 @@ console.log(lastArrayElement([10, "Burger", 69, "Nice"]))
 
 
 function arrToStr(arr = []) {
-    return arr.toString()
+    //return arr.toString()
+    return arr.join(" ")
 }
 
 console.log(arrToStr([10, "Burger", 69, "Nice"]))
