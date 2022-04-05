@@ -25,3 +25,9 @@ function reverseArray(arr) {
 }
 
 console.log(reverseArray([10, "Burger", 69, "Nice"]))
+
+function lastArrayElement(arr = []) {
+    return arr[arr.length - 1]
+}
+
+console.log(lastArrayElement([10, "Burger", 69, "Nice"]))
