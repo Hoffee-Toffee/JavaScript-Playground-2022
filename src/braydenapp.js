@@ -74,7 +74,7 @@ console.log(annointed([10, "Burger", 69, "Nice", true, 10.6]));
 function funky_tristan_b33Я00t(obj) {
     var cheese = []
     for (var key in obj) {
-        cheese.push(obj[key]);
+        cheese.push([key, obj[key]]);
     }
     return cheese
 }
