@@ -59,7 +59,7 @@ function corndog(novu,novu2){
     return novu.length === novu2.length;
 }
 console.log(corndog("meat", "vegetable"));
-///////////////////////////////////////////
-//\/\/\\/\/\/\/\/\\/\/||||||||\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\
+
+
 
 
