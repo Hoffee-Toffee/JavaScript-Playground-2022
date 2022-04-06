@@ -53,4 +53,13 @@ function arrValTypes(arr = []) {
     return typeArr.join(", ")
 }
 
-console.log(arrValTypes([10, "Burger", 69, "Nice", true, 10.6]))
+console.log(arrValTypes([10, "Burger", 69, "Nice", true, 10.6]));
+//first = (setting equal) == (checking if equal) === (checking if equal and same datatype)
+function corndog(novu,novu2){
+    return novu.length === novu2.length;
+}
+console.log(corndog("meat", "vegetable"));
+///////////////////////////////////////////
+//\/\/\\/\/\/\/\/\\/\/||||||||\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\
+
+
