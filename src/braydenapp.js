@@ -49,7 +49,6 @@ function arrValTypes(arr = []) {
     for (let index = 0; index < arr.length; index++) {
         typeArr.push(typeof(arr[index]))
     }
-
     return typeArr.join(", ")
 }
 
@@ -60,6 +59,27 @@ function corndog(novu,novu2){
 }
 console.log(corndog("meat", "vegetable"));
 
+function annointed(jar){
+    var gib = []
+    for (let index = 0; index < jar.length; index++) {
+        if (typeof jar[index] == "number" ) {
+            gib.push(jar[index])
+        }        
+    }
+    return gib 
+}
+
+console.log(annointed([10, "Burger", 69, "Nice", true, 10.6])); 
+
+function funky_tristan_b33Я00t(obj) {
+    var cheese = []
+    for (var key in obj) {
+        cheese.push(obj[key]);
+    }
+    return cheese
+}
+
+console.log(funky_tristan_b33Я00t({var: 1, var2: 2}))
 
 
 
