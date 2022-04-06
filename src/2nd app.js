@@ -81,5 +81,17 @@ function funky_tristan_b33Я00t(obj) {
 
 console.log(funky_tristan_b33Я00t({var: 1, var2: 2}))
 
-
-
+function largest(arr){
+    var newLargest = [];
+    for (let index = 0; index < arr.length; index++) {
+        var largestNumber = 0;
+        for (let index2 = 0; index2 < arr[index].length; index2++) {
+            if (arr[index][index2] > largestNumber) {
+                largestNumber = arr[index][index2]
+            }
+        }
+        newLargest.push(largestNumber);
+    }
+    return newLargest
+}
+console.log(largest([[1, 99, 5],[5, 100, 7],[12, 3, 24]]));
