@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="nav.css">
+        <script src="nav.css"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.11.2/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img alt="user">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">User Page</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+
+                <header>
+                    <button id="toggle" class="toggle">
+                    </button>
+
+                    <i class="fa fa-bars fa-2x"></i>
+                    <h1>My Landing Page</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+
+                    <button class="cta-btn" id="open">Sign Up</button>
+                </header>
+
+                <!-- Header & Form, Name, Email, Password, Submit -->
+                <div class="modal-container" id="modal">
+                    <button class="close-btn" id="close">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <div class="modal-header">
+                        <h3>Sign Up</h3>
+                    </div>
+                    <div class="modal-content">
+                        <form class="modal-content">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" name="name" placeholder="Enter Name" class="form-input">
+                            </div>
+
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" placeholder="Enter Email" class="form-input">
+                            </div>
+
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" placeholder="Enter Password" class="form-input">
+                            </div>
+
+                            <div>
+                                <label for="password">Confirm Password</label>
+                                <input type="password" name="password" placeholder="Confirm Password" class="form-input">
+                            </div>
+
+                            <input type="submit" value="Sign Up" class="submit-btn">
+                        </form>
+
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
