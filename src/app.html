@@ -3,50 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>To do list</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="app.css">
-        <script src="app.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"/>
     </head>
     <body>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo right">To do list</a>
-
-            </div>
-        </nav>
-
-        <div class="container">
-            <form id="task-form">
-                <input name="title" placeholder="Task" type="text">
-                <button class="waves-effect waves-light btn" type="submit">Add Task</button>
-            </form>
-
-            <ul class="collection" id="todo-list">
-                <li class="collection-item">
-                    <div>
-                        <span>Task 1</span>
-
-                        <i id="delete-task" class="material-icons secondary-content">delete</i>
-                        <a href="#modal" class="model-trigger secondary-content">
-                            <i class="material-icons">edit</i>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <input name="newtask" placeholder="Update Task" type="text">
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" id="update-task" class="modal-close waves-effect waves-green btn-flat">Update</a>
-                </div>
-            </div>
-        </div>
+        <img src="https://freepikpsd.com/file/2019/10/uss-enterprise-png-view-original.png" alt="" id="ship">
+        <div id="stars"></div>
+        <script src="stars.js"></script>
     </body>
 </html>
