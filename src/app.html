@@ -10,43 +10,13 @@
         <script src="app.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js"></script>
     </head>
     <body>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo right">To do list</a>
-
-            </div>
-        </nav>
-
-        <div class="container">
-            <form id="task-form">
-                <input name="title" placeholder="Task" type="text">
-                <button class="waves-effect waves-light btn" type="submit">Add Task</button>
-            </form>
-
-            <ul class="collection" id="todo-list">
-                <li class="collection-item">
-                    <div>
-                        <span>Task 1</span>
-
-                        <i id="delete-task" class="material-icons secondary-content">delete</i>
-                        <a href="#modal" class="model-trigger secondary-content">
-                            <i class="material-icons">edit</i>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <input name="newtask" placeholder="Update Task" type="text">
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" id="update-task" class="modal-close waves-effect waves-green btn-flat">Update</a>
-                </div>
-            </div>
-        </div>
+        <button class="add" id="add">
+            <i class="fa fa-plus"></i>
+        </button>
     </body>
 </html>
