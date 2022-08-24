@@ -25,19 +25,23 @@
     animation: ship-x 31s infinite ease-in-out, ship-y 47s infinite ease-in-out, ship-z 53s infinite ease-in-out;
 }
 
+#ship img {
+    height: 100%;
+}
+
 /* Animation keyframes 50->45->50->55->50*/
 @keyframes ship-x {
     0% {
         left: 50%;
     }
     25% {
-        left: 45%;
+        left: 47.5%;
     }
     50% {
         left: 50%;
     }
     75% {
-        left: 55%;
+        left: 52.5%;
     }
     100% {
         left: 50%;
@@ -50,13 +54,13 @@
         top: 50%;
     }
     25% {
-        top: 45%;
+        top: 47.5%;
     }
     50% {
         top: 50%;
     }
     75% {
-        top: 55%;
+        top: 52.5%;
     }
     100% {
         top: 50%;
@@ -81,3 +85,42 @@
     }
 }
 
+picture:after{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 200px;
+    bottom: calc(50% - 20px);
+    left: 10%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    /* Trim out some of the element so it's shaped like a triangle (tip on the left) */
+    clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+    /* Half transparent white -> blue -> orange */
+    background-image: linear-gradient(to right, #ffffff00, #39beff,#ff872c);
+    /* Add animation that fluctuates the blur and opacity */
+    animation: thruster 0.1s infinite;
+}
+
+@keyframes thruster {
+    0% {
+        filter: blur(10px) opacity(0.75);
+        width: 200px;
+    }
+    25% {
+        filter: blur(20px) opacity(1);
+        width: 150px;
+    }
+    50% {
+        filter: blur(10px) opacity(0.75);
+        width: 200px;
+    }
+    75% {
+        filter: blur(0px) opacity(0.5);
+        width: 175px;
+    }
+    100% {
+        filter: blur(10px) opacity(0.75);
+        width: 200px;
+    }
+}
