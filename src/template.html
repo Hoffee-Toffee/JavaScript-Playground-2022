@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Template</title>
+        <link rel="stylesheet" href="template.css">
+        <style>
+            div {
+                background-color: darkgray;
+                height: 500px;
+                width: 500px;
+                border: 2px solid ;
+                animation: border-color 0.5s infinite alternate-reverse;
+            }
+
+            p {
+                font: 2em "Roboto", sans-serif;
+                background-color: lightgray;
+                height: 200px;
+                width: 75%;
+            }
+
+            span {
+                font-size: 16em;
+                font-weight: bold;
+                background-color: yellow;
+                height: 2em;
+                width: 100px;
+                border: 5px dotted;
+                animation: border-color 0.5s infinite alternate;
+            }
+
+            @keyframes border-color {
+                0% {
+                    border-color: blue;
+                }
+                50% {
+                    border-color: green;
+                }
+                100% {
+                    border-color: red;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div><p>
+            Add this <span>span tag</span> to a paragraph within a div tag.
+        </p></div>
+    </body>
+</html>
